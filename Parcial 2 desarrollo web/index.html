@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- SEO & Metadatos -->
+  <title>Juan José Restrepo Álvarez | Portafolio Profesional - Ingeniería Informática & Aspirante a Quant</title>
+  <meta name="description" content="Portafolio profesional de Juan José Restrepo Álvarez, estudiante de Ingeniería Informática en la Corporación Universitaria Lasallista. Apasionado por la tecnología, las finanzas cuantitativas (Quant) y el desarrollo web.">
+  <meta name="author" content="Juan José Restrepo Álvarez">
+  <meta name="keywords" content="Juan Jose Restrepo, Portafolio, Ingenieria Informatica, Lasallista, Quant, Python, Desarrollo Web, Bootstrap">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%230d6efd'/><text x='50%' y='55%' font-size='50' font-weight='bold' fill='white' dominant-baseline='middle' text-anchor='middle'>JR</text></svg>">
+
+  <!-- Google Fonts: Space Grotesk & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="90" tabindex="0">
+
+  <!-- ========================================================= -->
+  <!-- NAVBAR RESPONSIVE (Bootstrap 5)                          -->
+  <!-- ========================================================= -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-glass" id="mainNavbar">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#hero">
+        <span class="brand-badge">JR</span>
+        <span class="brand-name">Juan José <span class="text-accent">Restrepo</span></span>
+      </a>
+
+      <div class="d-flex align-items-center gap-2 order-lg-3">
+        <!-- Theme Switcher -->
+        <button class="btn btn-outline-theme btn-sm rounded-pill px-3 py-1" id="themeToggleBtn" aria-label="Cambiar tema claro/oscuro" title="Cambiar tema">
+          <i class="bi bi-sun-fill" id="themeIcon"></i>
+        </button>
+
+        <!-- Botón menú móvil -->
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Abrir menú de navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse order-lg-2" id="navbarContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-uppercase fw-medium fs-7">
+          <li class="nav-item">
+            <a class="nav-link" href="#informacion-personal">Sobre Mí</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#estudios">Estudios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#proyectos">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#lenguajes">Habilidades</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#intereses">Áreas de Interés</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========================================================= -->
+  <!-- SECCIÓN HERO: PRESENTACIÓN PRINCIPAL                     -->
+  <!-- ========================================================= -->
+  <header class="hero-section" id="hero">
+    <div class="hero-backdrop"></div>
+    <div class="container position-relative">
+      <div class="row align-items-center min-vh-100 py-5">
+        
+        <div class="col-lg-7 col-md-12 text-center text-lg-start mb-5 mb-lg-0">
+          <div class="badge-status mb-3 d-inline-flex align-items-center gap-2">
+            <span class="pulse-indicator"></span>
+            <span>Estudiante de 4to Semestre • Ingeniería Informática</span>
+          </div>
+
+          <h1 class="hero-title fw-bold display-4 mb-3">
+            Hola, soy <span class="gradient-text">Juan José Restrepo</span>
+          </h1>
+
+          <p class="hero-subtitle text-secondary fs-5 mb-4">
+            Futuro Ingeniero Informático en la <strong>Corporación Universitaria Lasallista</strong> con aspiración y pasión por las <span class="text-accent fw-semibold">Finanzas Cuantitativas (QUANT)</span>, la economía, el análisis algorítmico y el desarrollo de software.
+          </p>
+
+          <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start mb-4">
+            <a href="#proyectos" class="btn btn-primary-custom btn-lg shadow-sm">
+              <i class="bi bi-briefcase me-2"></i>Ver Proyectos
+            </a>
+            <a href="#contacto" class="btn btn-outline-custom btn-lg">
+              <i class="bi bi-chat-dots me-2"></i>Contáctame
+            </a>
+            <a href="https://github.com/JuanJoETFS" target="_blank" rel="noopener noreferrer" class="btn btn-icon-custom btn-lg" title="Perfil de GitHub">
+              <i class="bi bi-github"></i>
+            </a>
+          </div>
+
+          <!-- Quick facts -->
+          <div class="row g-3 pt-3 text-start border-top border-secondary-subtle">
+            <div class="col-6 col-sm-4">
+              <div class="stat-card">
+                <span class="stat-number">4°</span>
+                <span class="stat-label">Semestre Lasallista</span>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4">
+              <div class="stat-card">
+                <span class="stat-number">B2</span>
+                <span class="stat-label">Nivel de Inglés</span>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4">
+              <div class="stat-card">
+                <span class="stat-number text-accent">QUANT</span>
+                <span class="stat-label">Enfoque Profesional</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-5 col-md-12 text-center">
+          <div class="hero-visual-card position-relative mx-auto">
+            <div class="glow-sphere"></div>
+            
+            <div class="quant-terminal-card shadow-lg">
+              <div class="terminal-header d-flex align-items-center justify-content-between px-3 py-2">
+                <div class="d-flex gap-2">
+                  <span class="circle-btn red"></span>
+                  <span class="circle-btn yellow"></span>
+                  <span class="circle-btn green"></span>
+                </div>
+                <small class="text-muted font-monospace">quant_profile.py</small>
+                <i class="bi bi-cpu text-info"></i>
+              </div>
+              <div class="terminal-body p-4 text-start font-monospace fs-7">
+                <p class="mb-1"><span class="text-info">class</span> <span class="text-warning">QuantDeveloper</span>:</p>
+                <p class="mb-1 ps-3 text-muted"># Perfil del Desarrollador</p>
+                <p class="mb-1 ps-3">name = <span class="text-success">"Juan José Restrepo Álvarez"</span></p>
+                <p class="mb-1 ps-3">role = <span class="text-success">"Ing. Informática & Quant Aspirant"</span></p>
+                <p class="mb-1 ps-3">university = <span class="text-success">"UniLasallista (Semestre 4)"</span></p>
+                <p class="mb-1 ps-3">languages = [<span class="text-success">"Python"</span>, <span class="text-success">"HTML/CSS"</span>, <span class="text-success">"JS"</span>]</p>
+                <p class="mb-1 ps-3">interests = [<span class="text-success">"Quantitative Finance"</span>, <span class="text-success">"Economy"</span>]</p>
+                <p class="mb-1 ps-3">english_level = <span class="text-success">"B2 Upper-Intermediate"</span></p>
+                <p class="mb-0 ps-3">status = <span class="text-accent fw-bold">"Ready to Build & Learn"</span></p>
+              </div>
+            </div>
+
+            <!-- Floating Badges -->
+            <div class="floating-badge badge-top-right">
+              <i class="bi bi-graph-up-arrow text-success me-2"></i>
+              <span>Financial Math & Algorithmic Trading</span>
+            </div>
+            <div class="floating-badge badge-bottom-left">
+              <i class="bi bi-code-slash text-info me-2"></i>
+              <span>Modern Frontend Responsive</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ========================================================= -->
+    <!-- SECCIÓN A: INFORMACIÓN PERSONAL                          -->
+    <!-- ========================================================= -->
+    <section class="section-padding" id="informacion-personal">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <span class="section-subtitle">Sección A</span>
+          <h2 class="section-title">Información Personal</h2>
+          <div class="title-divider mx-auto"></div>
+          <p class="text-secondary max-w-600 mx-auto mt-2">
+            Conoce más sobre mi trayectoria, motivación vocacional y visión profesional en la intersección de la tecnología y las finanzas.
+          </p>
+        </div>
+
+        <div class="row g-4 align-items-stretch">
+          
+          <!-- Bio Principal -->
+          <div class="col-lg-7">
+            <div class="card h-100 p-4 p-md-5 custom-card border-0 shadow-sm">
+              <div class="d-flex align-items-center gap-3 mb-4">
+                <div class="avatar-circle">
+                  <span>JR</span>
+                </div>
+                <div>
+                  <h3 class="h4 mb-0 fw-bold">Juan José Restrepo Álvarez</h3>
+                  <p class="text-accent mb-0 fw-medium">Estudiante de Ingeniería Informática • 4° Semestre</p>
+                </div>
+              </div>
+
+              <h4 class="h5 fw-semibold mb-3">Mi Perfil Profesional</h4>
+              <p class="text-secondary leading-relaxed mb-3">
+                Soy un estudiante universitario profundamente apasionado por la informática, los sistemas de computación y el impacto que tienen las herramientas tecnológicas en el mundo real. Mi curiosidad me lleva a explorar constantemente cómo los datos, los algoritmos y la ingeniería resuelven problemáticas complejas.
+              </p>
+              <p class="text-secondary leading-relaxed mb-4">
+                Mi meta y gran sueño profesional es consolidarme como <strong>QUANT (Analista Cuantitativo)</strong>, fusionando la potencia de la programación y el poder del cómputo con la economía, las matemáticas financieras y los mercados globales. Me caracterizo por mi disciplina, proactividad y disposición permanente para aprender nuevas tecnologías.
+              </p>
+
+              <div class="row g-3 pt-2">
+                <div class="col-sm-6">
+                  <div class="info-item d-flex align-items-center gap-3 p-3 rounded">
+                    <i class="bi bi-geo-alt-fill text-accent fs-4"></i>
+                    <div>
+                      <span class="text-muted d-block fs-7">Ubicación</span>
+                      <strong class="fs-6">Antioquia, Colombia</strong>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="info-item d-flex align-items-center gap-3 p-3 rounded">
+                    <i class="bi bi-translate text-accent fs-4"></i>
+                    <div>
+                      <span class="text-muted d-block fs-7">Segunda Lengua</span>
+                      <strong class="fs-6">Inglés B2 (Competente)</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tarjeta de Contacto Directo e Información de Contacto -->
+          <div class="col-lg-5">
+            <div class="card h-100 p-4 p-md-5 custom-card border-0 shadow-sm d-flex flex-column justify-content-between">
+              <div>
+                <h4 class="h5 fw-semibold mb-4 d-flex align-items-center gap-2">
+                  <i class="bi bi-person-lines-fill text-accent"></i>
+                  Datos de Contacto
+                </h4>
+                <p class="text-secondary fs-7 mb-4">
+                  Disponible para contacto académico, iniciativas de desarrollo colaborativo o proyectos de software:
+                </p>
+
+                <ul class="list-unstyled contact-details-list mb-4">
+                  <li class="mb-3 d-flex align-items-center gap-3">
+                    <div class="icon-bubble">
+                      <i class="bi bi-envelope-at text-info"></i>
+                    </div>
+                    <div>
+                      <span class="text-muted fs-7 d-block">Correo Electrónico</span>
+                      <a href="mailto:juanjoserestrepo962@gmail.com" class="text-decoration-none contact-link fw-medium">
+                        juanjoserestrepo962@gmail.com
+                      </a>
+                    </div>
+                  </li>
+
+                  <li class="mb-3 d-flex align-items-center gap-3">
+                    <div class="icon-bubble">
+                      <i class="bi bi-telephone-fill text-success"></i>
+                    </div>
+                    <div>
+                      <span class="text-muted fs-7 d-block">Teléfono / WhatsApp</span>
+                      <a href="https://wa.me/573053230190" target="_blank" rel="noopener noreferrer" class="text-decoration-none contact-link fw-medium">
+                        +57 305 323 0190
+                      </a>
+                    </div>
+                  </li>
+
+                  <li class="mb-3 d-flex align-items-center gap-3">
+                    <div class="icon-bubble">
+                      <i class="bi bi-github text-light"></i>
+                    </div>
+                    <div>
+                      <span class="text-muted fs-7 d-block">GitHub Profesional</span>
+                      <a href="https://github.com/JuanJoETFS" target="_blank" rel="noopener noreferrer" class="text-decoration-none contact-link fw-medium">
+                        github.com/JuanJoETFS
+                      </a>
+                    </div>
+                  </li>
+
+                  <li class="d-flex align-items-center gap-3">
+                    <div class="icon-bubble">
+                      <i class="bi bi-building text-warning"></i>
+                    </div>
+                    <div>
+                      <span class="text-muted fs-7 d-block">Institución</span>
+                      <span class="fw-medium">Corporación Universitaria Lasallista</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="pt-3 border-top border-secondary-subtle">
+                <a href="#contacto" class="btn btn-accent-gradient w-100 py-2">
+                  <i class="bi bi-send-fill me-2"></i>Enviar un Mensaje
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- SECCIÓN B: ESTUDIOS REALIZADOS                           -->
+    <!-- ========================================================= -->
+    <section class="section-padding bg-surface" id="estudios">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <span class="section-subtitle">Sección B</span>
+          <h2 class="section-title">Estudios Realizados</h2>
+          <div class="title-divider mx-auto"></div>
+          <p class="text-secondary max-w-600 mx-auto mt-2">
+            Formación académica universitaria, idiomas y capacitación continua en ciencias de la computación.
+          </p>
+        </div>
+
+        <div class="timeline-container position-relative max-w-850 mx-auto">
+
+          <!-- Estudio 1: Ingeniería Informática -->
+          <div class="timeline-card mb-4">
+            <div class="timeline-badge">
+              <i class="bi bi-mortarboard-fill"></i>
+            </div>
+            <div class="card custom-card border-0 p-4 shadow-sm">
+              <div class="d-flex flex-wrap justify-content-between align-items-start gap-2 mb-2">
+                <div>
+                  <span class="badge bg-primary-subtle text-primary border border-primary-subtle mb-1">En curso</span>
+                  <h3 class="h5 fw-bold mb-0">Pregrado en Ingeniería Informática</h3>
+                  <p class="text-accent mb-0 fw-medium">Corporación Universitaria Lasallista</p>
+                </div>
+                <span class="text-muted fs-7 font-monospace"><i class="bi bi-calendar3 me-1"></i>4to Semestre (2024 - Actualidad)</span>
+              </div>
+              <p class="text-secondary fs-7 mb-3">
+                Formación integral en fundamentos de la ingeniería de software, arquitectura de computadores, estructuras de datos, desarrollo web, bases de datos y modelado algorítmico, guiada bajo principios éticos y de excelencia académica.
+              </p>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="skill-tag">Desarrollo Web</span>
+                <span class="skill-tag">Algoritmos</span>
+                <span class="skill-tag">Estructuras de Datos</span>
+                <span class="skill-tag">Lógica Matemática</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Estudio 2: Inglés B2 -->
+          <div class="timeline-card mb-4">
+            <div class="timeline-badge bg-emerald">
+              <i class="bi bi-globe-americas"></i>
+            </div>
+            <div class="card custom-card border-0 p-4 shadow-sm">
+              <div class="d-flex flex-wrap justify-content-between align-items-start gap-2 mb-2">
+                <div>
+                  <span class="badge bg-success-subtle text-success border border-success-subtle mb-1">Certificado / Nivel Alcanzado</span>
+                  <h3 class="h5 fw-bold mb-0">Competencia en Idioma Inglés - Nivel B2</h3>
+                  <p class="text-accent mb-0 fw-medium">Marco Común Europeo de Referencia (MCER)</p>
+                </div>
+                <span class="text-muted fs-7 font-monospace"><i class="bi bi-award me-1"></i>Upper-Intermediate (B2)</span>
+              </div>
+              <p class="text-secondary fs-7 mb-3">
+                Capacidad fluida para la lectura y redacción de documentación técnica en inglés, comprensión de conferencias internacionales, lectura de papers financieros y colaboración en entornos multiculturales.
+              </p>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="skill-tag">Technical English</span>
+                <span class="skill-tag">B2 Upper Intermediate</span>
+                <span class="skill-tag">Documentación Global</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Estudio 3: Formación Autodidacta Quant & Web -->
+          <div class="timeline-card">
+            <div class="timeline-badge bg-purple">
+              <i class="bi bi-journal-code"></i>
+            </div>
+            <div class="card custom-card border-0 p-4 shadow-sm">
+              <div class="d-flex flex-wrap justify-content-between align-items-start gap-2 mb-2">
+                <div>
+                  <span class="badge bg-info-subtle text-info border border-info-subtle mb-1">Autoformación Continua</span>
+                  <h3 class="h5 fw-bold mb-0">Fundamentos de Programación Cuantitativa & Web</h3>
+                  <p class="text-accent mb-0 fw-medium">Estudio Continuo & Autoaprendizaje</p>
+                </div>
+                <span class="text-muted fs-7 font-monospace"><i class="bi bi-lightning-charge me-1"></i>En paralelo</span>
+              </div>
+              <p class="text-secondary fs-7 mb-3">
+                Dedicación autónoma al aprendizaje de la sintaxis y librerías de Python para análisis numérico, conceptos macroeconómicos y microeconómicos, así como maquetación responsiva con Bootstrap 5 y estándares web modernos.
+              </p>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="skill-tag">Python Básico</span>
+                <span class="skill-tag">Economía & Mercados</span>
+                <span class="skill-tag">HTML5 / CSS3</span>
+                <span class="skill-tag">Bootstrap 5</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- SECCIÓN C: PROYECTOS / EXPERIENCIA                       -->
+    <!-- ========================================================= -->
+    <section class="section-padding" id="proyectos">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <span class="section-subtitle">Sección C</span>
+          <h2 class="section-title">Proyectos & Desarrollo Práctico</h2>
+          <div class="title-divider mx-auto"></div>
+          <p class="text-secondary max-w-600 mx-auto mt-2">
+            Iniciativas académicas, prototipos de software y herramientas desarrolladas para aplicar los conocimientos en ingeniería y análisis computacional.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          
+          <!-- Proyecto 1: Portafolio Web Profesional -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 project-card custom-card border-0 shadow-sm overflow-hidden">
+              <div class="project-header p-4">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <span class="project-category">Desarrollo Web Frontend</span>
+                  <a href="https://github.com/JuanJoETFS" target="_blank" rel="noopener noreferrer" class="project-external-link" title="Ver repositorio">
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+                <h3 class="h5 fw-bold mb-2">Portafolio Web Profesional Responsive</h3>
+                <p class="text-secondary fs-7">
+                  Sitio web moderno desarrollado para presentar trayectoria académica, habilidades técnicas y proyección vocacional. Diseñado bajo estándares de diseño responsivo móvil, tablet y escritorio.
+                </p>
+              </div>
+              <div class="card-footer bg-transparent border-0 px-4 pb-4 pt-0">
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                  <span class="badge-tech">HTML5</span>
+                  <span class="badge-tech">CSS3</span>
+                  <span class="badge-tech">Bootstrap 5</span>
+                  <span class="badge-tech">JavaScript</span>
+                  <span class="badge-tech">GitHub Pages</span>
+                </div>
+                <div class="d-flex justify-content-between align-items-center pt-2 border-top border-secondary-subtle">
+                  <span class="text-success fs-7 fw-medium"><i class="bi bi-check-circle-fill me-1"></i>Desplegado en Vivo</span>
+                  <a href="#hero" class="btn btn-outline-primary btn-sm rounded-pill">Ver Inicio</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto 2: Simulador y Modelador Financiero Cuantitativo -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 project-card custom-card border-0 shadow-sm overflow-hidden">
+              <div class="project-header p-4">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <span class="project-category text-warning border-warning-subtle">Finanzas Cuantitativas (En desarrollo)</span>
+                  <a href="https://github.com/JuanJoETFS" target="_blank" rel="noopener noreferrer" class="project-external-link" title="Ver repositorio">
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+                <h3 class="h5 fw-bold mb-2">Quant Simulator & Financial Analysis</h3>
+                <p class="text-secondary fs-7">
+                  Prototipo en Python enfocado en calcular métricas elementales de activos de inversión: cálculo de retornos simples y logarítmicos, análisis de volatilidad histórica y visualización de series de tiempo.
+                </p>
+              </div>
+              <div class="card-footer bg-transparent border-0 px-4 pb-4 pt-0">
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                  <span class="badge-tech">Python</span>
+                  <span class="badge-tech">Matemáticas Financieras</span>
+                  <span class="badge-tech">Lógica Algorítmica</span>
+                  <span class="badge-tech">Modelado</span>
+                </div>
+                <div class="d-flex justify-content-between align-items-center pt-2 border-top border-secondary-subtle">
+                  <span class="text-warning fs-7 fw-medium"><i class="bi bi-hourglass-split me-1"></i>Fase de Investigación</span>
+                  <span class="text-muted fs-7 font-monospace">Académico</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto 3: Calculadora de Interés Compuesto y Proyecciones -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 project-card custom-card border-0 shadow-sm overflow-hidden">
+              <div class="project-header p-4">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <span class="project-category text-info border-info-subtle">Economía & Algoritmos</span>
+                  <a href="https://github.com/JuanJoETFS" target="_blank" rel="noopener noreferrer" class="project-external-link" title="Ver repositorio">
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+                <h3 class="h5 fw-bold mb-2">Calculadora de Interés Compuesto & Proyecciones</h3>
+                <p class="text-secondary fs-7">
+                  Herramienta interactiva de cálculo financiero para proyectar curvas de rendimiento a largo plazo según aportes periódicos, tasas de interés efectivo anual e inflación esperada.
+                </p>
+              </div>
+              <div class="card-footer bg-transparent border-0 px-4 pb-4 pt-0">
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                  <span class="badge-tech">JavaScript</span>
+                  <span class="badge-tech">Bootstrap</span>
+                  <span class="badge-tech">Matemática Financiera</span>
+                  <span class="badge-tech">UI Dinámica</span>
+                </div>
+                <div class="d-flex justify-content-between align-items-center pt-2 border-top border-secondary-subtle">
+                  <span class="text-info fs-7 fw-medium"><i class="bi bi-calculator me-1"></i>Herramienta Web</span>
+                  <button class="btn btn-outline-info btn-sm rounded-pill" data-bs-toggle="modal" data-bs-target="#calculatorModal">Probar Demo</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal Interactivo: Demo de Calculadora Financiera -->
+    <div class="modal fade" id="calculatorModal" tabindex="-1" aria-labelledby="calculatorModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content custom-card border-0 shadow-lg">
+          <div class="modal-header border-secondary-subtle">
+            <h5 class="modal-title fw-bold" id="calculatorModalLabel">
+              <i class="bi bi-calculator-fill text-accent me-2"></i>Simulador de Interés Compuesto
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body">
+            <p class="text-secondary fs-7">
+              Demostración interactiva de cálculo financiero programada con JavaScript para ilustrar la lógica cuantitativa:
+            </p>
+            <div class="mb-3">
+              <label for="calcCapital" class="form-label fs-7 fw-medium">Capital Inicial ($ COP o USD):</label>
+              <input type="number" class="form-control" id="calcCapital" value="1000000" placeholder="Ej: 1000000">
+            </div>
+            <div class="row g-2 mb-3">
+              <div class="col-6">
+                <label for="calcRate" class="form-label fs-7 fw-medium">Tasa Anual (%):</label>
+                <input type="number" class="form-control" id="calcRate" value="12" step="0.5" placeholder="12">
+              </div>
+              <div class="col-6">
+                <label for="calcYears" class="form-label fs-7 fw-medium">Plazo (Años):</label>
+                <input type="number" class="form-control" id="calcYears" value="5" min="1" max="50">
+              </div>
+            </div>
+            <button class="btn btn-primary-custom w-100" id="btnRunCalculation">
+              <i class="bi bi-cpu me-2"></i>Calcular Proyección
+            </button>
+            <div class="calc-result-box mt-3 p-3 rounded text-center d-none" id="calcResultBox">
+              <span class="text-muted fs-7 d-block">Monto Final Estimado:</span>
+              <span class="fs-4 fw-bold text-accent" id="calcFinalAmount">$0</span>
+              <span class="text-success fs-7 d-block mt-1" id="calcInterestGained">Ganancia neta: $0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========================================================= -->
+    <!-- SECCIÓN D: LENGUAJES DE PROGRAMACIÓN & HABILIDADES        -->
+    <!-- ========================================================= -->
+    <section class="section-padding bg-surface" id="lenguajes">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <span class="section-subtitle">Sección D</span>
+          <h2 class="section-title">Lenguajes & Habilidades Técnicas</h2>
+          <div class="title-divider mx-auto"></div>
+          <p class="text-secondary max-w-600 mx-auto mt-2">
+            Tecnologías y lenguajes en los que he trabajado y continúo profundizando para convertirme en un profesional competitivo.
+          </p>
+        </div>
+
+        <div class="row g-4 align-items-center">
+          
+          <!-- Lenguajes Principales -->
+          <div class="col-lg-6">
+            <div class="card custom-card border-0 p-4 p-md-5 shadow-sm h-100">
+              <h3 class="h5 fw-bold mb-4 d-flex align-items-center gap-2">
+                <i class="bi bi-code-square text-accent"></i>
+                Lenguajes de Programación
+              </h3>
+
+              <!-- Python -->
+              <div class="skill-item mb-4">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-filetype-py text-warning fs-5"></i>
+                    <strong class="fs-6">Python</strong>
+                    <span class="badge bg-secondary-subtle text-secondary fs-8">En aprendizaje & Fundamentos</span>
+                  </div>
+                  <span class="fs-7 text-muted font-monospace">Fundamentos / Quant</span>
+                </div>
+                <div class="progress progress-custom" role="progressbar" aria-label="Progreso Python" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar bg-warning" style="width: 45%;"></div>
+                </div>
+                <small class="text-secondary fs-8 mt-1 d-block">Sintaxis, lógica de scripts, condicionales, estructuras y base para cálculo cuantitativo.</small>
+              </div>
+
+              <!-- HTML5 & CSS3 -->
+              <div class="skill-item mb-4">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-filetype-html text-danger fs-5"></i>
+                    <strong class="fs-6">HTML5 & CSS3</strong>
+                    <span class="badge bg-secondary-subtle text-secondary fs-8">Responsive Design</span>
+                  </div>
+                  <span class="fs-7 text-muted font-monospace">Intermedio</span>
+                </div>
+                <div class="progress progress-custom" role="progressbar" aria-label="Progreso HTML CSS" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar bg-danger" style="width: 70%;"></div>
+                </div>
+                <small class="text-secondary fs-8 mt-1 d-block">Estructuración semántica, Flexbox, CSS Grid, adaptabilidad responsive y estilizado moderno.</small>
+              </div>
+
+              <!-- JavaScript -->
+              <div class="skill-item mb-4">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-filetype-js text-warning fs-5"></i>
+                    <strong class="fs-6">JavaScript</strong>
+                    <span class="badge bg-secondary-subtle text-secondary fs-8">Básico</span>
+                  </div>
+                  <span class="fs-7 text-muted font-monospace">Básico</span>
+                </div>
+                <div class="progress progress-custom" role="progressbar" aria-label="Progreso JavaScript" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar bg-primary" style="width: 40%;"></div>
+                </div>
+                <small class="text-secondary fs-8 mt-1 d-block">Manipulación del DOM, eventos, cálculos matemáticos y dinamismo en el navegador.</small>
+              </div>
+
+              <!-- SQL / Bases de datos -->
+              <div class="skill-item">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-database text-info fs-5"></i>
+                    <strong class="fs-6">SQL & Bases de Datos</strong>
+                    <span class="badge bg-secondary-subtle text-secondary fs-8">Académico</span>
+                  </div>
+                  <span class="fs-7 text-muted font-monospace">Básico</span>
+                </div>
+                <div class="progress progress-custom" role="progressbar" aria-label="Progreso SQL" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar bg-info" style="width: 50%;"></div>
+                </div>
+                <small class="text-secondary fs-8 mt-1 d-block">Consultas SELECT, filtrado, relaciones y modelado relacional básico.</small>
+              </div>
+            </div>
+          </div>
+
+          <!-- Frameworks & Herramientas -->
+          <div class="col-lg-6">
+            <div class="card custom-card border-0 p-4 p-md-5 shadow-sm h-100">
+              <h3 class="h5 fw-bold mb-4 d-flex align-items-center gap-2">
+                <i class="bi bi-tools text-accent"></i>
+                Herramientas, Frameworks & Metodologías
+              </h3>
+
+              <div class="row g-3">
+                
+                <div class="col-sm-6">
+                  <div class="tool-box p-3 rounded">
+                    <div class="d-flex align-items-center gap-2 mb-2">
+                      <i class="bi bi-bootstrap-fill text-purple fs-4"></i>
+                      <h4 class="h6 mb-0 fw-bold">Bootstrap 5</h4>
+                    </div>
+                    <p class="text-secondary fs-8 mb-0">
+                      Maquetación fluida mediante sistema de rejilla (Grid), componentes UI y diseño 100% responsive.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <div class="tool-box p-3 rounded">
+                    <div class="d-flex align-items-center gap-2 mb-2">
+                      <i class="bi bi-git text-danger fs-4"></i>
+                      <h4 class="h6 mb-0 fw-bold">Git & GitHub</h4>
+                    </div>
+                    <p class="text-secondary fs-8 mb-0">
+                      Control de versiones, flujo de commits, repositorios remotos y despliegue continuo con GitHub Pages.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <div class="tool-box p-3 rounded">
+                    <div class="d-flex align-items-center gap-2 mb-2">
+                      <i class="bi bi-laptop text-info fs-4"></i>
+                      <h4 class="h6 mb-0 fw-bold">VS Code</h4>
+                    </div>
+                    <p class="text-secondary fs-8 mb-0">
+                      Entorno de desarrollo ágil con extensiones para depuración, formateo y productividad de código.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <div class="tool-box p-3 rounded">
+                    <div class="d-flex align-items-center gap-2 mb-2">
+                      <i class="bi bi-translate text-success fs-4"></i>
+                      <h4 class="h6 mb-0 fw-bold">Inglés B2</h4>
+                    </div>
+                    <p class="text-secondary fs-8 mb-0">
+                      Comprensión lectora avanzada de documentación técnica oficial y estándares de programación global.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Nota pedagógica -->
+              <div class="alert alert-secondary-custom mt-4 mb-0 d-flex gap-3 align-items-center">
+                <i class="bi bi-info-circle-fill text-accent fs-4"></i>
+                <div class="fs-8">
+                  <strong>Compromiso de Crecimiento:</strong> Como estudiante de 4to semestre, mantengo una práctica continua para elevar progresivamente mis habilidades hacia niveles avanzados en algoritmos cuantitativos.
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- SECCIÓN E: ÁREAS DE INTERÉS PROFESIONAL                   -->
+    <!-- ========================================================= -->
+    <section class="section-padding" id="intereses">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <span class="section-subtitle">Sección E</span>
+          <h2 class="section-title">Áreas de Interés Profesional</h2>
+          <div class="title-divider mx-auto"></div>
+          <p class="text-secondary max-w-600 mx-auto mt-2">
+            Campos especializados de la tecnología y las finanzas donde enfoco mis metas, estudios futuros y vocación.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          
+          <!-- Interés 1: Finanzas Cuantitativas (QUANT) -->
+          <div class="col-lg-6 col-md-6">
+            <div class="card h-100 interest-card custom-card border-0 p-4 p-md-5 shadow-sm">
+              <div class="interest-icon-wrapper mb-3 bg-quant">
+                <i class="bi bi-graph-up-arrow"></i>
+              </div>
+              <div class="badge bg-primary-subtle text-primary border border-primary-subtle align-self-start mb-2">Enfoque Primario</div>
+              <h3 class="h4 fw-bold mb-3">Finanzas Cuantitativas (QUANT)</h3>
+              <p class="text-secondary leading-relaxed mb-4">
+                Mi principal objetivo profesional. Me apasiona la aplicación de modelos matemáticos, teoría de probabilidades y algoritmos de alta velocidad para la valoración de instrumentos financieros, gestión de riesgo de carteras y estrategias de trading algorítmico sistemático.
+              </p>
+              <ul class="list-unstyled text-secondary fs-7 mb-0">
+                <li class="mb-2"><i class="bi bi-check2 text-accent me-2"></i>Modelos estadísticos para predicción de series de tiempo</li>
+                <li class="mb-2"><i class="bi bi-check2 text-accent me-2"></i>Estrategias de arbitraje y mitigación de riesgo financiero</li>
+                <li><i class="bi bi-check2 text-accent me-2"></i>Implementación de algoritmos cuantitativos en Python y C++</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Interés 2: Economía y Mercados de Capitales -->
+          <div class="col-lg-6 col-md-6">
+            <div class="card h-100 interest-card custom-card border-0 p-4 p-md-5 shadow-sm">
+              <div class="interest-icon-wrapper mb-3 bg-economy">
+                <i class="bi bi-bank"></i>
+              </div>
+              <div class="badge bg-warning-subtle text-warning border border-warning-subtle align-self-start mb-2">Fundamento Teórico</div>
+              <h3 class="h4 fw-bold mb-3">Economía y Dinámica de Mercados</h3>
+              <p class="text-secondary leading-relaxed mb-4">
+                Entendimiento integral del funcionamiento macroeconómico y microeconómico: política monetaria, tasas de interés, ciclos económicos, liquidez de mercado y cómo los eventos globales impactan la cotización de activos y divisas.
+              </p>
+              <ul class="list-unstyled text-secondary fs-7 mb-0">
+                <li class="mb-2"><i class="bi bi-check2 text-accent me-2"></i>Análisis macroeconómico e indicadores de política fiscal/monetaria</li>
+                <li class="mb-2"><i class="bi bi-check2 text-accent me-2"></i>Mercados de renta variable, renta fija y derivados</li>
+                <li><i class="bi bi-check2 text-accent me-2"></i>Comportamiento de finanzas conductuales (Behavioral Finance)</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Interés 3: Data Science y Machine Learning Financiero -->
+          <div class="col-lg-6 col-md-6">
+            <div class="card h-100 interest-card custom-card border-0 p-4 p-md-5 shadow-sm">
+              <div class="interest-icon-wrapper mb-3 bg-data">
+                <i class="bi bi-cpu-fill"></i>
+              </div>
+              <div class="badge bg-info-subtle text-info border border-info-subtle align-self-start mb-2">Herramienta Analítica</div>
+              <h3 class="h4 fw-bold mb-3">Data Science & Machine Learning</h3>
+              <p class="text-secondary leading-relaxed mb-4">
+                Aprovechar el aprendizaje automático y el Big Data para extraer patrones de datos financieros masivos no estructurados, procesar sentimiento de noticias económicas y optimizar la toma de decisiones automatizada.
+              </p>
+              <ul class="list-unstyled text-secondary fs-7 mb-0">
+                <li class="mb-2"><i class="bi bi-check2 text-accent me-2"></i>Modelos de regresión, clasificación y redes neuronales</li>
+                <li class="mb-2"><i class="bi bi-check2 text-accent me-2"></i>Procesamiento y limpieza de datos con Pandas & NumPy</li>
+                <li><i class="bi bi-check2 text-accent me-2"></i>Backtesting riguroso y análisis de rendimiento</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Interés 4: Ingeniería Web & Sistemas Distribuidos -->
+          <div class="col-lg-6 col-md-6">
+            <div class="card h-100 interest-card custom-card border-0 p-4 p-md-5 shadow-sm">
+              <div class="interest-icon-wrapper mb-3 bg-tech">
+                <i class="bi bi-layers-fill"></i>
+              </div>
+              <div class="badge bg-success-subtle text-success border border-success-subtle align-self-start mb-2">Base de Ingeniería</div>
+              <h3 class="h4 fw-bold mb-3">Desarrollo Web & Arquitectura de Software</h3>
+              <p class="text-secondary leading-relaxed mb-4">
+                Construcción de dashboards de visualización en tiempo real, APIs de alto rendimiento e interfaces de usuario accesibles e intuitivas con tecnologías web frontend modernas y frameworks responsivos.
+              </p>
+              <ul class="list-unstyled text-secondary fs-7 mb-0">
+                <li class="mb-2"><i class="bi bi-check2 text-accent me-2"></i>Diseño frontend adaptativo con Bootstrap y estándares W3C</li>
+                <li class="mb-2"><i class="bi bi-check2 text-accent me-2"></i>Despliegue de aplicaciones web estáticas y dinámicas</li>
+                <li><i class="bi bi-check2 text-accent me-2"></i>Buenas prácticas de código limpio y optimización UX/UI</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- SECCIÓN DE CONTACTO                                       -->
+    <!-- ========================================================= -->
+    <section class="section-padding bg-surface" id="contacto">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <span class="section-subtitle">Comunícate</span>
+          <h2 class="section-title">Contáctame Directamente</h2>
+          <div class="title-divider mx-auto"></div>
+          <p class="text-secondary max-w-600 mx-auto mt-2">
+            ¿Tienes alguna consulta académica, proyecto o sugerencia? Envíame un mensaje o comunícate a través de mis canales directos.
+          </p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+          
+          <!-- Canales Rápidos -->
+          <div class="col-lg-5">
+            <div class="card custom-card border-0 p-4 p-md-5 shadow-sm h-100">
+              <h3 class="h5 fw-bold mb-4">Canales Inmediatos</h3>
+              
+              <div class="contact-card-btn mb-3 p-3 rounded d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="icon-circle bg-success-subtle text-success">
+                    <i class="bi bi-whatsapp fs-4"></i>
+                  </div>
+                  <div>
+                    <strong class="d-block">WhatsApp</strong>
+                    <span class="text-muted fs-7">+57 305 323 0190</span>
+                  </div>
+                </div>
+                <a href="https://wa.me/573053230190" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-success rounded-pill px-3">
+                  Chatear
+                </a>
+              </div>
+
+              <div class="contact-card-btn mb-3 p-3 rounded d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="icon-circle bg-primary-subtle text-primary">
+                    <i class="bi bi-envelope fs-4"></i>
+                  </div>
+                  <div>
+                    <strong class="d-block">Correo Personal</strong>
+                    <span class="text-muted fs-7">juanjoserestrepo962@gmail.com</span>
+                  </div>
+                </div>
+                <a href="mailto:juanjoserestrepo962@gmail.com" class="btn btn-sm btn-outline-primary rounded-pill px-3">
+                  Escribir
+                </a>
+              </div>
+
+              <div class="contact-card-btn p-3 rounded d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="icon-circle bg-secondary-subtle text-light">
+                    <i class="bi bi-github fs-4"></i>
+                  </div>
+                  <div>
+                    <strong class="d-block">GitHub Perfil</strong>
+                    <span class="text-muted fs-7">@JuanJoETFS</span>
+                  </div>
+                </div>
+                <a href="https://github.com/JuanJoETFS" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-light rounded-pill px-3">
+                  Seguir
+                </a>
+              </div>
+
+              <div class="mt-4 pt-3 border-top border-secondary-subtle">
+                <p class="text-secondary fs-8 mb-0">
+                  <i class="bi bi-clock-history me-1"></i> Tiempo de respuesta estimado: menos de 24 horas.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Formulario de Contacto Funcional con Formspree/Mailto -->
+          <div class="col-lg-7">
+            <div class="card custom-card border-0 p-4 p-md-5 shadow-sm h-100">
+              <h3 class="h5 fw-bold mb-4">Envíame un Mensaje</h3>
+              
+              <form id="contactForm" onsubmit="handleContactSubmit(event)">
+                <div class="row g-3">
+                  
+                  <div class="col-md-6">
+                    <label for="senderName" class="form-label fs-7 fw-medium">Nombre Completo *</label>
+                    <input type="text" class="form-control" id="senderName" required placeholder="Tu nombre">
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="senderEmail" class="form-label fs-7 fw-medium">Correo Electrónico *</label>
+                    <input type="email" class="form-control" id="senderEmail" required placeholder="ejemplo@correo.com">
+                  </div>
+
+                  <div class="col-12">
+                    <label for="senderSubject" class="form-label fs-7 fw-medium">Asunto *</label>
+                    <input type="text" class="form-control" id="senderSubject" required placeholder="Motivo de tu mensaje">
+                  </div>
+
+                  <div class="col-12">
+                    <label for="senderMessage" class="form-label fs-7 fw-medium">Mensaje *</label>
+                    <textarea class="form-control" id="senderMessage" rows="4" required placeholder="Escribe aquí tu mensaje o propuesta..."></textarea>
+                  </div>
+
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-primary-custom w-100 py-2" id="submitBtn">
+                      <i class="bi bi-send-fill me-2"></i>Enviar Mensaje
+                    </button>
+                  </div>
+
+                </div>
+              </form>
+
+              <!-- Alerta de éxito -->
+              <div class="alert alert-success mt-3 d-none" id="contactSuccessAlert" role="alert">
+                <i class="bi bi-check-circle-fill me-2"></i>
+                ¡Gracias por tu mensaje! Se ha preparado la ventana para enviarlo directamente a <strong>juanjoserestrepo962@gmail.com</strong>.
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================= -->
+  <!-- FOOTER                                                    -->
+  <!-- ========================================================= -->
+  <footer class="footer py-5 border-top border-secondary-subtle">
+    <div class="container text-center text-md-start">
+      <div class="row g-4 align-items-center">
+        
+        <div class="col-md-6">
+          <div class="d-flex align-items-center justify-content-center justify-content-md-start gap-2 mb-2">
+            <span class="brand-badge">JR</span>
+            <span class="fw-bold fs-5">Juan José Restrepo Álvarez</span>
+          </div>
+          <p class="text-secondary fs-7 mb-0">
+            Estudiante de Ingeniería Informática • 4° Semestre • Corporación Universitaria Lasallista.
+            <br>Desarrollo Web Responsive • Parcial 2 (Docente: Néstor Vélez Vargas).
+          </p>
+        </div>
+
+        <div class="col-md-6 text-center text-md-end">
+          <div class="d-flex justify-content-center justify-content-md-end gap-3 mb-2">
+            <a href="https://github.com/JuanJoETFS" target="_blank" rel="noopener noreferrer" class="social-footer-link" aria-label="GitHub">
+              <i class="bi bi-github"></i>
+            </a>
+            <a href="mailto:juanjoserestrepo962@gmail.com" class="social-footer-link" aria-label="Email">
+              <i class="bi bi-envelope-fill"></i>
+            </a>
+            <a href="https://wa.me/573053230190" target="_blank" rel="noopener noreferrer" class="social-footer-link" aria-label="WhatsApp">
+              <i class="bi bi-whatsapp"></i>
+            </a>
+          </div>
+          <p class="text-secondary fs-8 mb-0">
+            &copy; <span id="currentYear">2026</span> Juan José Restrepo Álvarez. Construido con <span class="text-danger">&hearts;</span> y Bootstrap 5.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botón Volver Arriba -->
+  <a href="#hero" class="btn-back-to-top" id="backToTopBtn" aria-label="Volver al inicio" title="Volver arriba">
+    <i class="bi bi-arrow-up"></i>
+  </a>
+
+  <!-- Bootstrap 5.3.3 JS Bundle con Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Script Personalizado -->
+  <script src="js/main.js"></script>
+</body>
+</html>
